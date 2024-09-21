@@ -19,7 +19,7 @@ Utilizar todas as tags explicadas nas aulas:
 [X] <hr />
 [X] <!--Anotações-->
 [X] &lt; &gt;
-[X] <Bloquote> <q>
+[X] <Blockquote> ou <q>
 [X] <center>
 [X] <small>
 [X] <mark>
