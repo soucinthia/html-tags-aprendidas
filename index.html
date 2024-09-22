@@ -10,94 +10,209 @@
 
 <body>
     <center>
-        <h1 id="inicio">Módulo I - Primeiros Passos com HTML</h1>
+        <h1 style="color: purple;" id="inicio">Módulo I - Primeiros Passos com HTML</h1>
     </center>
     <hr />
 
     <h2>Índice</h2>
-    <!--anotações: linkar as âncoras com botão voltar ao índice -->
     <ul>
         <li><a href="#html">O que é HTML?</a></li>
         <li><a href="#titulo">Title</a></li>
         <li><a href="#listas">Listas</a></li>
-        <ol>
-            <li><a href="#"> &lt;ul&gt; Lista desordenada, representada por bolinha</li></a>
-            <li><a href="#"> &lt;ol&gt; Listas Ordenadas, representada por números</li></a>
-            <li><a href="#"> &lt;li&gt; Item que faz parte da lista</li></a>
+        <ol> <!--anotações: linkar as âncoras do índice com os títulos-->
+            <li><a href="#"> &lt;ul&gt; Lista Desordenada, representada por bolinha</li></a>
+            <li><a href="#"> &lt;ol&gt; Listas Ordenadas, representada por números e letras</li></a>
+            <li><a href="#"> &lt;li&gt; Itens que fazem parte da lista</li></a>
         </ol>
         <li><a href="#ancoras">Âncoras</a></li>
         <li><a href="#cite">Citações</a></li>
+        <ol>
+            <li>Blockquote, citações longas</li>
+            <li>Q, citações curtas</li>
+            <li>Cite</li>
+        </ol>
         <li><a href="#hr">Tag Hr</a></li>
         <li><a href="#abbr">Tag ABBR</a></li>
+        <li><a href="#conclusao">Conclusão</a></li>
     </ul>
     <br>
     <hr /><br>
+
     <h2 id="html">O que é HTML?</h2>
-    <p> HTML, que significa <i><abbr title="Linguagem de Marcação de Hipertexto">HyperText Markup Language</abbr></i>, é
+    <p> HTML significa <b><i><abbr title="Linguagem de Marcação de Hipertexto">HyperText Markup Language</abbr></i></b>, é
         a linguagem padrão usada para criar e estruturar páginas na web.
-        Criada por <i>Tim Berners-Lee</i>, HTML permite que você organize e formate o conteúdo de uma página, como
+        Criada por <cite>Tim Berners-Lee</cite>, o HTML permite que você organize e formate o conteúdo de uma página, como
         textos, imagens, links, e outros elementos.
     </p>
-
+    <br>
     <h2 id="titulo">Sobre <abbr title="Elemento HTML Título">Title</abbr></h2>
     <p> Os elementos HTML <b>&lt;h1&gt;</b> até <b>&lt;h6&gt;</b> representam seis níveis de título de seção, onde
         <b>&lt;h1&gt;</b>é o nível de seção mais alto e <b>&lt;h6&gt;</b> é o mais baixo.
         <br> O seguinte código apresenta todos níveis de Cabeçalho em uso:
-
-        <blockquote> <strong>
-            &lt;h1&gt; Esse é um exemplo de Cabeçalho nível 1 &lt;/h1&gt; <br>
-            &lt;h2&gt; Esse é um exemplo de Cabeçalho nível 2 &lt;/h2&gt; <br>
-            &lt;h3&gt; Esse é um exemplo de Cabeçalho nível 3 &lt;/h3&gt; <br>
-            &lt;h4&gt; Esse é um exemplo de Cabeçalho nível 4 &lt;/h4&gt; <br>
-            &lt;h5&gt; Esse é um exemplo de Cabeçalho nível 5 &lt;/h5&gt; <br>
-            &lt;h6&gt; Esse é um exemplo de Cabeçalho nível 6 &lt;/h6&gt; <br>
-        </blockquote> </strong>
+        <table>
+            <tr>
+                <td style="border-right: 2px solid purple; height: 60px;"></td>
+                <td><blockquote><strong>
+                    &lt;h1&gt; Esse é um exemplo de Cabeçalho nível 1 &lt;/h1&gt; <br>
+                    &lt;h2&gt; Esse é um exemplo de Cabeçalho nível 2 &lt;/h2&gt; <br>
+                    &lt;h3&gt; Esse é um exemplo de Cabeçalho nível 3 &lt;/h3&gt; <br>
+                    &lt;h4&gt; Esse é um exemplo de Cabeçalho nível 4 &lt;/h4&gt; <br>
+                    &lt;h5&gt; Esse é um exemplo de Cabeçalho nível 5 &lt;/h5&gt; <br>
+                    &lt;h6&gt; Esse é um exemplo de Cabeçalho nível 6 &lt;/h6&gt; <br>
+                </blockquote></strong></td>
+            </tr>
+        </table> 
+     <br>Resultado deste código:<br><br>
+        <table>
+            <tr>
+                <td style="border-right: 2px solid purple; height: 60px;"></td>
+                <td><blockquote>
+                    <h1> Esse é um exemplo de Cabeçalho nível 1 </h1>
+                    <h2> Esse é um exemplo de Cabeçalho nível 2 </h2>
+                    <h3> Esse é um exemplo de Cabeçalho nível 3 </h3>
+                    <h4> Esse é um exemplo de Cabeçalho nível 4 </h4>
+                    <h5> Esse é um exemplo de Cabeçalho nível 5 </h5>
+                    <h6> Esse é um exemplo de Cabeçalho nível 6 </h6>
+                </blockquote></td>
+            </tr>
+         </table>
     </p>
-
-    <p> Resultado deste código:
-        <blockquote>
-            <h1> Esse é um exemplo de Cabeçalho nível 1 </h1>
-            <h2> Esse é um exemplo de Cabeçalho nível 2 </h2>
-            <h3> Esse é um exemplo de Cabeçalho nível 3 </h3>
-            <h4> Esse é um exemplo de Cabeçalho nível 4 </h4>
-            <h5> Esse é um exemplo de Cabeçalho nível 5 </h5>
-            <h6> Esse é um exemplo de Cabeçalho nível 6 </h6>
-        </blockquote>
-    </p>
-    <h6><a href="#inicio">Voltar</a></h6>
+    <br>
 
     <h2 id="listas">Sobre Listas</h2>
-    <p>
+    <p> Para criar uma <u>lista não ordenada</u> em HTML, você pode usar as tags <b>&lt;ul&gt;</b> e <b>&lt;li&gt;</b>.
+     <br> A tag <b>&lt;ul&gt;</b> inicia a lista não ordenada e cada item da lista é definido dentro de uma tag <b>&lt;li&gt;</b>.
+     <br> Podemos adicionar quantos itens quisermos dentro da lista, e eles serão exibidos com marcadores (bolinhas) por padrão. 
+     <br>Exemplo de código:
+        <table>
+            <tr>
+                <td style="border-right: 2px solid purple; height: 60px;"></td>
+                <td><blockquote><b>
+                    &lt;ul&gt;<br>
+                        &lt;li&gt; Item 1 &lt;/li&gt;<br>
+                        &lt;li&gt; Item 2 &lt;/li&gt;<br>
+                        &lt;li&gt; Item 3 &lt;/li&gt;<br>
+                    &lt;/ul&gt;
+                </td></blockquote></b>
+            </tr>
+        </table>
+     <br>Resultado deste código:<br><br>
+        <table>
+            <tr>
+                <td style="border-right: 2px solid purple; height: 60px;"></td>
+                <td><blockquote><b>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                </td></blockquote></b>
+            </tr>
+        </table>
+    </p>
 
-    </p><br>
-    <h6><a href="#inicio">Voltar</a></h6>
+    <p>Para criar uma <u>lista ordenada</u> em HTML, você pode usar as tags <b>&lt;ol&gt;</b> e <b>&lt;li&gt;</b>.
+     <br>A tag <b>&lt;ol&gt;</b> inicia a lista ordenada e cada item da lista é definido dentro de uma tag <b>&lt;li&gt;</b>.
+     <br>Os itens da lista serão numerados automaticamente pelo navegador.
+     <br>Exemplo de código:
+     <br>
+        <table>
+            <tr>
+                <td style="border-right: 2px solid purple; height: 60px;"></td>
+                <td><blockquote><b>
+                        &lt;ol&gt;<br>
+                            &lt;li&gt; Item 1 &lt;/li&gt;<br>
+                            &lt;li&gt; Item 2 &lt;/li&gt;<br>
+                            &lt;li&gt; Item 3 &lt;/li&gt;<br>
+                        &lt;/ol&gt;
+                </td></blockquote></b>
+            </tr>
+        </table>
+
+     <br>Resultado deste código:<br><br>
+        <table>
+            <tr>
+                <td style="border-right: 2px solid purple; height: 60px;"></td>
+                <td><blockquote><b>
+                    <ol>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ol>
+                </td></blockquote></b>
+            </tr>
+        </table>
+     
+     <br>Podemos personalizar o tipo de numeração usando o atributo type na tag <b>&lt;ol&gt;</b>, como <b>type="A"</b> 
+     para letras maiúsculas ou <b>type="a"</b> para letras minúsculas.
+     <br>Exemplo de código:
+     <br><br>
+        <table>
+            <tr>
+                <td style="border-right: 2px solid purple; height: 60px;"></td>
+                <td><blockquote><b>
+                        &lt;ol type="A"&gt;<br>
+                        &lt;li&gt; Item 1 &lt;/li&gt;<br>
+                        &lt;li&gt; Item 2 &lt;/li&gt;<br>
+                        &lt;li&gt; Item 3 &lt;/li&gt;<br>
+                    &lt;/ol&gt;
+                </td></blockquote></b>
+            </tr>
+        </table>
+
+     <br>Resultado deste código:<br><br>
+        <table>
+             <tr>
+                <td style="border-right: 2px solid purple; height: 60px;"></td>
+                <td><blockquote><b>
+                    <ol type="A">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                     </ol>
+                </td></blockquote></b>
+            </tr>
+        </table>
+    </p>
+    <br>
 
     <h2 id="ancoras">Sobre Âncoras</h2>
-    <p> O elemento <b>&lt;a&gt;</b> em HTML (ou elemento âncora), com o atributo href="" cria-se um hiperligação nas páginas
+    <p> O elemento <b>&lt;a&gt;</b> em HTML (ou elemento âncora), com o atributo href="#" cria-se um hiperligação nas páginas
         web, arquivos, endereços de emails, ligações na mesma página ou endereços na URL.
-        O conteúdo dentro de cada <b>&lt;a&gt;</b> precisará indicar o destino do link.
+     <br> O conteúdo dentro de cada <b>&lt;a&gt;</b> precisará indicar o destino do link.
 
-     Exemplo de código:
-        <blockquote>
-            &lt;h3&gt; Índice &lt;h3&gt;<br>
-            &lt;li&gt; &lt;a href="#nome" title="clique aqui para ir ao destino NOME ESCOLHIDO"&gt; Nome escolhido
-            &lt;/a&gt; &lt;/li&gt;
-        </blockquote>
-     <h6> <q>É OPCIONAL USAR O TITLE PARA INDICAR O QUE ACONTECERÁ AO PASSAR O MOUSE NA PALAVRA.</q> </h6>
-     <br>
+     <br>Exemplo de código:
+        <table>
+            <tr>
+                <td style="border-right: 2px solid purple; height: 60px;"></td>
+                <td><blockquote><b>
+                    &lt;h3&gt; Índice &lt;h3&gt;<br>
+                    &lt;li&gt; &lt;a href="#nome" title="clique aqui para ir ao destino NOME ESCOLHIDO"&gt; Nome escolhido
+                    &lt;/a&gt; &lt;/li&gt;
+                </blockquote></td></b>
+            </tr>
+        </table>
+
+     <h6 style="color: purple;"><q>É OPCIONAL USAR O TITLE PARA INDICAR O QUE ACONTECERÁ AO PASSAR O MOUSE NA PALAVRA.</q></h6>
+    
      Para âncorar usamos a tag <mark>id=""</mark>
-        <blockquote>
-            &lt;h2 id="nome"&gt; Nome escolhido &lt;/h2&gt;
-        </blockquote>
-     <br>
-     Resultado:
+     <br><br>
+        <table>
+            <tr>
+                <td style="border-right: 2px solid purple; height: 60px;"></td>
+                <td><blockquote><b>
+                    &lt;h2 id="nome"&gt; Nome escolhido &lt;/h2&gt;
+                </blockquote></td></b>
+            </tr>
+         </table>
+     <br>Resultado deste código:<br><br>
         <blockquote>
             <h3>Índice</h3>
             <li><a href="#nome" title="clique aqui para ir ao destino NOME ESCOLHIDO"> Nome escolhido </a> </li>
         </blockquote>
         <hr />
         <blockquote>
-            <h2 id="nome"> Nome escolhido </h2>
+            <h2 id="nome">Nome escolhido</h2>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Distinctio nihil, eius voluptates, harum beatae
             fuga rerum tenetur quasi amet ratione tempora labore eligendi!<br> Quas nulla, pariatur ab earum alias
             enim.<br>
@@ -109,54 +224,128 @@
     <br>
     <h6><a href="#inicio">Voltar</a></h6>
 
-    <h2 id="cite">Blockquote ou Citações</h2>
-    <p>
-
+    <h2 id="cite">Citações, Blockquote ou Q</h2>
+    <p> O elemento <b>&lt;blockquote&gt;</b> é usado para indicar uma citação longa ou um trecho citado de outra fonte.
+     <br>Exemplo de código:
+     <br>
+        <table>
+            <tr>
+                <td style="border-right: 2px solid purple; height: 60px;"></td>
+                <td><blockquote><b>
+                    &lt;blockquote&gt; Este é um exemplo de citação longa, onde o ( blockquote ) cria um espaço
+                    no parágrafo para diferenciar. &lt;/blockquote&gt;
+                </blockquote></td></b>
+            </tr>
+         </table>
+     <br>Resultado deste código:<br><br>
+        <table>
+            <tr>
+                <td style="border-right: 2px solid purple; height: 60px;"></td>
+                <td><blockquote><b>
+                    | Este é um exemplo de citação longa, onde o ( blockquote ) cria um espaço no parágrafo para diferenciar.
+                </blockquote></td></b>
+            </tr>
+        </table>
+     <br>
+     O elemento <b>&lt;q&gt;</b> é utilizado para citações curtas. Diferente do <b>&lt;blockquote&gt;</b>, 
+     ele não cria uma nova linha ou parágrafo, mas adiciona aspas ao redor do texto citado.
+     <br>Exemplo de código:
+     <br><br>
+        <table>
+            <tr>
+                <td style="border-right: 2px solid purple; height: 60px;"></td>
+                <td><blockquote><b>
+                    &lt;q&gt; Este é um exemplo de citação curta, onde o ( q ) cria aspas para diferenciar.&lt;/q&gt;
+                </blockquote></td></b>
+            </tr>
+        </table>
+     <br>Resultado deste código:<br><br>
+        <table>
+            <tr>
+                 <td style="border-right: 2px solid purple; height: 60px;"></td>
+                <td><blockquote><b>
+                    <q>Este é um exemplo de citação curta, onde o ( q ) cria aspas para diferenciar.</q>
+                </blockquote></td></b>
+            </tr>
+        </table>
     </p>
     <br>
-    <h6><a href="#inicio">Voltar</a></h6>
 
     <h2 id="hr">O que é a tag Hr?</h2>
-    <p> O elemento HTML <b>&lt;hr&gt;</b> representa uma quebra temática entre elementos de nível de parágrafo, gerando
-        uma linha. <br>Exemplo:
-        <blockquote>
-            &lt;p&gt; &lt;b&gt; Este é um exemplo de parágrafo 01 &lt;/b&gt; &lt;/p&gt;<br>
-            &lt;hr&gt;<br>
-            &lt;p&gt; &lt;b&gt; Este é um exemplo de parágrafo 02 &lt;/b&gt; &lt;/p&gt;
-        </blockquote>
-     Resultado do código:
-        <blockquote>
-            <p><b>Este é um exemplo de parágrafo 01</b></p>
-            <hr>
-            <p><b>Este é um exemplo de parágrafo 02</b></p>
-        </blockquote>
+    <p> O elemento HTML <b>&lt;hr /&gt;</b> representa uma quebra temática entre elementos de nível de parágrafo, gerando
+        uma linha. 
+     <br>Exemplo de código:
+        <table>
+            <tr>
+                <td style="border-right: 2px solid purple; height: 60px;"></td>
+                <td><blockquote><b>
+                    &lt;p&gt; &lt;b&gt; Este é um exemplo de parágrafo 01 &lt;/b&gt; &lt;/p&gt;<br>
+                    &lt;hr /&gt;<br>
+                    &lt;p&gt; &lt;b&gt; Este é um exemplo de parágrafo 02 &lt;/b&gt; &lt;/p&gt;
+                </blockquote></td></b>
+            </tr>
+        </table>
+     <br>Resultado do código:<br><br>
+        <p><b>Este é um exemplo de parágrafo 01</b></p>
+        <hr>
+        <p><b>Este é um exemplo de parágrafo 02</b></p>
     </p>
+    <br>
 
     <h2 id="abbr">O que é a tag ABBR?</h2>
     <p> O Elemento HTML &lt;abbr&gt; (ou Elemento de Abreviação HTML) representa uma abreviação e fornece uma descrição.
-        Junto com a tag title, deve conter a descrição completa.<br> Exemplo:
-        <blockquote>
-         &lt;p&gt; O Elemento HTML <mark>&lt;abbr title="Elemento de Abreviação HTML"&gt;</mark> abbr
-         <mark>&lt;/abbr&gt;</mark> &lt;/p&gt;
-        </blockquote>
-     Note que ao passar o mouse em cima da palavra abbr, aparece a frase de descrição.
-        <blockquote>
-         <p>O Elemento HTML <abbr title="Elemento de Abreviação HTML">abbr </abbr> </p>
-        </blockquote>
-    </p> <br><br>
-        <blockquote>
-            <h5> Referências para criação deste artigo:<a href="https://developer.mozilla.org/pt-BR/" target="_blank">
-            Recursos para desenvolvedores,
-            por desenvolvedores</a> e <a href="https://www.dio.me/" target="_blank">Dio.me</a></h5>
-        </blockquote>
+        Junto com a tag title, deve conter a descrição completa.
+     <br>Exemplo de código:
+        <table>
+            <tr>
+               <td style="border-right: 2px solid purple; height: 60px;"></td> 
+               <td><blockquote><b>
+                    &lt;p&gt; O Elemento HTML <mark>&lt;abbr title="Elemento de Abreviação HTML"&gt;</mark> abbr
+                    <mark>&lt;/abbr&gt;</mark> &lt;/p&gt;
+               </td></blockquote></b>
+            </tr>
+        </table>
+     <br>Note que ao passar o mouse em cima da palavra abbr, aparece a frase de descrição.
+     <br><br>
+        <table>
+             <tr>
+                <td style="border-right: 2px solid purple; height: 60px;"></td>
+                <td><blockquote>
+                    <p>O Elemento HTML <abbr title="Elemento de Abreviação HTML">abbr </abbr> </p>
+                </td></blockquote>
+            </tr>
+        </table>
+    </p> 
+    <br>
+
+    <h2 id="conclusao">Conclusão:</h2>  
+    <p> Aqui finalizo o aprendizado em HTML puro. Foram abordados várias tags que aprendi no curso, como &lt;small&gt;, 
+        &lt;mark&gt;, &lt;strong&gt; e na busca por conhecimentos, aprendi mencionar um código sem executá-lo, usando
+     <br><b>( & l t ;) representando ( < ) e ( & g t ; ) representado ( > )</b>
+    </p>
+    <br>
+    <p>
+        <table>
+            <tr>
+               <td style="border-right: 2px solid purple; height: 60px;"></td> 
+               <td><blockquote><b>
+                    <h5>Referências para criação deste artigo:
+                    <a href="https://developer.mozilla.org/pt-BR/" target="_blank">
+                    Recursos para desenvolvedores, por desenvolvedores</a> 
+                    e <a href="https://www.dio.me/" target="_blank">Dio.me</a></h5>
+               </td></blockquote></b>
+            </tr>
+        </table>
+        
+    </p>
     <br>
     <h6><a href="#inicio">Voltar</a></h6>
 
     <br><br><br>
     <hr />
     <footer><small>
-            <center><b> Estrutura html criada por <a href="https://github.com/soucinthia" target="_blank"> Sou
-            Cinthia</a>- 2024</b></center>
+            <center><b> Estrutura html criada por <a href="https://github.com/soucinthia" target="_blank"> 
+            Sou Cinthia</a> 2024</b></center>
         </small></footer>
 
 </body>
