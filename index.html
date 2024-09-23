@@ -20,16 +20,15 @@
         <li><a href="#titulo">Title</a></li>
         <li><a href="#listas">Listas</a></li>
         <ol> <!--anotações: linkar as âncoras do índice com os títulos-->
-            <li><a href="#"> &lt;ul&gt; Lista Desordenada, representada por bolinha</li></a>
-            <li><a href="#"> &lt;ol&gt; Listas Ordenadas, representada por números e letras</li></a>
-            <li><a href="#"> &lt;li&gt; Itens que fazem parte da lista</li></a>
+            <li><a href="#ul"> &lt;ul&gt; Lista Desordenada, representada por bolinha</li></a>
+            <li><a href="#ol"> &lt;ol&gt; Listas Ordenadas, representada por números e letras</li></a>
         </ol>
         <li><a href="#ancoras">Âncoras</a></li>
         <li><a href="#cite">Citações</a></li>
         <ol>
-            <li>Blockquote, citações longas</li>
-            <li>Q, citações curtas</li>
-            <li>Cite</li>
+            <li><a href="#block">Blockquote, citações longas</li></a>
+            <li><a href="#q">Q, citações curtas</li></a>
+            <li><a href="#cite">Cite</li></a>
         </ol>
         <li><a href="#hr">Tag Hr</a></li>
         <li><a href="#abbr">Tag ABBR</a></li>
@@ -45,6 +44,7 @@
         textos, imagens, links, e outros elementos.
     </p>
     <br>
+
     <h2 id="titulo">Sobre <abbr title="Elemento HTML Título">Title</abbr></h2>
     <p> Os elementos HTML <b>&lt;h1&gt;</b> até <b>&lt;h6&gt;</b> representam seis níveis de título de seção, onde
         <b>&lt;h1&gt;</b>é o nível de seção mais alto e <b>&lt;h6&gt;</b> é o mais baixo.
@@ -80,7 +80,7 @@
     <br>
 
     <h2 id="listas">Sobre Listas</h2>
-    <p> Para criar uma <u>lista não ordenada</u> em HTML, você pode usar as tags <b>&lt;ul&gt;</b> e <b>&lt;li&gt;</b>.
+    <p> Para criar uma <u id="ul">lista não ordenada</u> em HTML, você pode usar as tags <b>&lt;ul&gt;</b> e <b>&lt;li&gt;</b>.
      <br> A tag <b>&lt;ul&gt;</b> inicia a lista não ordenada e cada item da lista é definido dentro de uma tag <b>&lt;li&gt;</b>.
      <br> Podemos adicionar quantos itens quisermos dentro da lista, e eles serão exibidos com marcadores (bolinhas) por padrão. 
      <br>Exemplo de código:
@@ -110,8 +110,8 @@
             </tr>
         </table>
     </p>
-
-    <p>Para criar uma <u>lista ordenada</u> em HTML, você pode usar as tags <b>&lt;ol&gt;</b> e <b>&lt;li&gt;</b>.
+    <br>
+    <p>Para criar uma <u id="ol">lista ordenada</u> em HTML, você pode usar as tags <b>&lt;ol&gt;</b> e <b>&lt;li&gt;</b>.
      <br>A tag <b>&lt;ol&gt;</b> inicia a lista ordenada e cada item da lista é definido dentro de uma tag <b>&lt;li&gt;</b>.
      <br>Os itens da lista serão numerados automaticamente pelo navegador.
      <br>Exemplo de código:
@@ -225,7 +225,7 @@
     <h6><a href="#inicio">Voltar</a></h6>
 
     <h2 id="cite">Citações, Blockquote ou Q</h2>
-    <p> O elemento <b>&lt;blockquote&gt;</b> é usado para indicar uma citação longa ou um trecho citado de outra fonte.
+    <p> O elemento <b id="block">&lt;blockquote&gt;</b> é usado para indicar uma citação longa ou um trecho citado de outra fonte.
      <br>Exemplo de código:
      <br>
         <table>
@@ -247,7 +247,7 @@
             </tr>
         </table>
      <br>
-     O elemento <b>&lt;q&gt;</b> é utilizado para citações curtas. Diferente do <b>&lt;blockquote&gt;</b>, 
+    <p>O elemento <b id="q">&lt;q&gt;</b> é utilizado para citações curtas. Diferente do <b>&lt;blockquote&gt;</b>, 
      ele não cria uma nova linha ou parágrafo, mas adiciona aspas ao redor do texto citado.
      <br>Exemplo de código:
      <br><br>
@@ -268,6 +268,31 @@
                 </blockquote></td></b>
             </tr>
         </table>
+    </p>
+    <br>
+    <p>O elemento <b id="cite">&lt;cite&gt;</b> é utilizado para representar um referêcia a um trabalho artistico ou criativo.
+     <br>Isso pode incluir livros, artigos, filmes, músicas, entre outros.
+     <br>O conteúdo dentro da tag <b>&lt;cite&gt;</b> por padrão, é exibido em itálico.
+        <br>Exemplo de código:
+        <br>
+           <table>
+               <tr>
+                   <td style="border-right: 2px solid purple; height: 60px;"></td>
+                   <td><blockquote><b>
+                        Este é um exemplo de citação, onde o &lt;cite&gt; ( cite ) escreve em itálico para diferenciar.&lt;/cite&gt;
+                   </blockquote></td></b>
+               </tr>
+           </table>
+        <br>Resultado deste código:<br><br>
+           <table>
+               <tr>
+                    <td style="border-right: 2px solid purple; height: 60px;"></td>
+                   <td><blockquote><b>
+                       Este é um exemplo de citação, onde o <cite> ( cite ) escreve em itálico para diferenciar.</cite>
+                    </blockquote></td></b>
+                   </blockquote></td></b>
+               </tr>
+           </table>
     </p>
     <br>
 
