@@ -1,32 +1,24 @@
 ## Desafio de Projeto: Criar Uma Página Web Utilizando as Tags Aprendidas
 ---
 A ideia deste desafio é elaborar um website, utilizando uma estrutura bem básica, utilizando tags aprendidas durante as aulas práticas até então.
-
 Utilizar todas as tags explicadas nas aulas:
 
 - [X] `<h1> até <h6>`
 - [X] `<p>`
-- [X] `<i> e <u>`
-- [X] `<strong> ou <b>`
-- [X] `<ol>`
-- [X] `<ul>`
-- [X] `<li>`
-- [X] `<nav>`
+- [X] `<strong> ou <b>, <i> e <u>`
+- [X] `<ul>, <ol> e <li>`
 - [X] `<abbr>`
-- [X] `<a>`
-- [X] `href="#"`
+- [X] `<a> href="#"`
 - [X] `id=""`
 - [X] `title=""`
 - [X] `<hr />`
 - [X] `<!--Anotações-->`
 - [X] `&lt; &gt;`
-- [X] `<Blockquote> ou <q>`
-- [X] `<center>`
-- [X] `<small>`
+- [X] `<Blockquote>, <q> e <cite>`
 - [X] `<mark>`
-- [X] Semântica `<header>`, `<section>`, `<article>`, `<aside>` e `<footer>`
-- [X] `<pre>` e `<code>`
-- [X] `<details>`e `<summary>`
+- [X] `Semântica <header>, <nav>, <section>, <article>, <aside> e <footer>`
+- [X] `<pre> e <code>`
+- [X] `<details> e <summary>`
 
 ### Conclusão 
 Aqui finalizo o aprendizado em HTML puro. Foram abordados várias tags que aprendi no curso. 
