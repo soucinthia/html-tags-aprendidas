@@ -11,6 +11,7 @@ Utilizar todas as tags explicadas nas aulas:
 - [X] `<ol>`
 - [X] `<ul>`
 - [X] `<li>`
+- [X] `<nav>`
 - [X] `<abbr>`
 - [X] `<a>`
 - [X] `href="#"`
@@ -23,6 +24,9 @@ Utilizar todas as tags explicadas nas aulas:
 - [X] `<center>`
 - [X] `<small>`
 - [X] `<mark>`
+- [X] Semântica `<header>`, `<section>`, `<article>`, `<aside>` e `<footer>`
+- [X] `<pre>` e `<code>`
+- [X] `<details>`e `<summary>`
 
 ### Conclusão 
 Aqui finalizo o aprendizado em HTML puro. Foram abordados várias tags que aprendi no curso. 
