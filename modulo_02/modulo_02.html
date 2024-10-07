@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo II</title>
+</head>
+
+<style>
+    html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    body{
+        margin-right: 80px;
+        background-color: #171717;
+        color:#e6e6e6;
+        font-family:'Courier New', Courier, monospace;
+        min-height: 100vh;
+        display: flex;
+        line-height: 130%;
+    }
+    pre { 
+        background-color: #2f2f2f;
+        display: block;
+        margin: 1em 0px;
+        font-size: .875rem;
+        line-height: 1.200;
+        overflow: auto;
+        border: .125rem solid #404040;
+    }
+    .menu{
+        position:fixed;
+        left: 0;
+        width: 220px;
+        height: 100%;
+        background-color: #171717;
+    }
+    .menu header {
+        font-size: 32px;
+        color:#489d48;
+        text-align: center;
+        line-height: 70px;
+        user-select: none;
+    }
+    .menu ul li a{
+        list-style: none;
+        text-decoration: none;
+        color: #fafafa;
+    }
+    h2, h4, a {
+        color: #489d48;
+    }
+    .Resultado{
+        background-color: #2f2f2f; 
+        border: .125rem solid #404040; 
+        margin: 1em 0px;
+    }
+    .container{
+        background-color: #171717;
+        display: flex;
+        gap: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    main{
+    margin-left: 225px;
+    }
+    .fim{
+        background-color: #2f2f2f;
+        border: .125rem solid #404040;  
+    }
+    .fim ul li a{
+        list-style: none;
+        text-decoration: none;
+        color: #fafafa;
+    }
+</style>
+
+<body>
+    <div class="container">
+
+  
+    <div class="menu">
+        <header>Índice</header>
+        <ul>
+         <li><a href="#">Módulo II - Mídias, Tabelas e Formulários</a></li>
+         <br>
+         <details><summary>O que são as tags de Mídia?</summary><br>
+         <ol>
+         <li><a href="#">Embed, object e iframe</a></li>
+         <li><a href="#">Tag img</a></li><br>
+         <li><a href="#">Tag audio</a></li><br>
+         <li><a href="#">Tag video</a></li><br>
+         <li><a href="#">Tag track</a></li><br>
+         <li><a href="#">Tag frame</a></li><br>
+         </ol>
+         </details>
+         <br>
+         <details><summary>Como construir uma tabela?</summary><br>
+         <ol>
+         <li><a href="#">Tag table</a></li><br>
+         <li><a href="#">Tag thead</a></li><br>
+         <li><a href="#">Tag tbody</a></li><br>
+         <li><a href="#">Tag tfoot</a></li><br>
+         <li><a href="#">Tag tr</a></li><br>
+         <li><a href="#">Tag td</a></li><br>
+         </ol>
+         </details>
+         <br>
+         <details><summary>Como criar formulários?</summary><br>
+         <ol>
+         <li><a href="#">Tag form</a></li><br>
+         <li><a href="#">Tag input</a></li><br>
+         <li><a href="#">Tag checkbox e radio</a></li><br>
+         <li><a href="#">Tag button</a></li><br>
+         <li><a href="#">Tag select</a></li><br>
+         <li><a href="#">Tag textarea</a></li><br>
+         </ol>
+         </details>
+         <br>
+         <details><summary>Recursos especiais</summary><br>
+         <ol>
+         <li><a href="#">datalist</a></li><br>
+         <li><a href="#">code, kbd e pre</a></li><br>
+         <li><a href="#">details e summary</a></li><br>
+         <li><a href="#">meter e progress</a></li><br>
+         <li><a href="#">canvas</a></li><br>
+         </details>
+         <br>
+         <li><a href="#conclusao">Conclusão</a></li>
+         <br>
+         <h4>Veja também:</h4><br>
+         <li><a href="index.html">Módulo I - Primeiros Passos com HTML</a></li>
+         <br>
+         <li><a href="#">Módulo III - Aprendendo CSS</a></li>
+
+        </ul>
+    </div>
+  
+    <br>
+    <hr /><br>
+ <main>
+    <section class="content">
+        <h1 style="text-align: center;" id="inicio">Módulo II - Mídias, Tabelas e Formulários</h1>
+        <hr />
+    
+ 
+
+    <h2 id="">O que são as tags de Mídia?</h2>
+    <h4 id="">Listas não ordenadas:</h4>
+    <p> 
+        Para criar uma lista não ordenada em HTML, você pode usar as tags <b>&lt;ul&gt;</b> e
+        <b>&lt;li&gt;</b>.<br>
+        A tag <b>&lt;ul&gt;</b> inicia a lista não ordenada e cada item da lista é definido dentro de uma tag
+        <b>&lt;li&gt;</b>.<br>
+        Podemos adicionar quantos itens quisermos dentro da lista, e eles serão exibidos com marcadores (bolinhas)
+        por padrão.<br>
+        Exemplo de código:
+        <pre><code>
+         &lt;ul&gt;<br>
+         &lt;li&gt;Item 1&lt;/li&gt;<br>
+         &lt;li&gt;Item 2&lt;/li&gt;<br>
+         &lt;li&gt;Item 3&lt;/li&gt;<br>
+         &lt;/ul&gt;
+        </code></pre>
+        Resultado deste código:
+        <div class="Resultado">
+         <blockquote>
+         <ul>
+         <li>Item 1</li>
+         <li>Item 2</li>
+         <li>Item 3</li>
+         </ul>
+         </blockquote>
+        </div>
+    </p>
+    
+    
+    <h2 id="conclusao">Conclusão:</h2>
+    <p> 
+       
+    </p>
+    <br>
+    <h6><a href="#inicio">Voltar</a></h6>
+    <hr />
+</section>
+    <section class="fim">
+        <br>
+        <blockquote><h4>Veja também:</h4>
+        <ul>
+        <li><a href="#">Módulo I - Primeiros Passos com HTML</a></li>
+        <br>
+        <li><a href="#">Módulo III - Aprendendo CSS</a></li>
+        </ul>
+        <br>
+    
+    </section>
+    <hr />
+    <footer style="text-align: center;"><small>
+           <b> Estrutura html criada por <a href="https://github.com/soucinthia" target="_blank">
+            Sou Cinthia</a> 2024</b></a>    
+    </small></footer>
+</div>
+</main>
+</body>
+
+</html>

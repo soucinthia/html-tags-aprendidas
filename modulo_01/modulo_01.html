@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo I</title>
+</head>
+
+<style>
+    html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    body{
+        margin-right: 80px;
+        background-color: #171717;
+        color:#e6e6e6;
+        font-family:'Courier New', Courier, monospace;
+        min-height: 100vh;
+        display: flex;
+        line-height: 130%;
+    }
+    pre { 
+        background-color: #2f2f2f;
+        display: block;
+        margin: 1em 0px;
+        font-size: .875rem;
+        line-height: 1.200;
+        overflow: auto;
+        border: .125rem solid #404040;
+    }
+    .menu{
+        position:fixed;
+        left: 0;
+        width: 220px;
+        height: 100%;
+        background-color: #171717;
+    }
+    .menu header {
+        font-size: 32px;
+        color:#489d48;
+        text-align: center;
+        line-height: 70px;
+        user-select: none;
+    }
+    .menu ul li a{
+        list-style: none;
+        text-decoration: none;
+        color: #fafafa;
+    }
+    h2, h4, a {
+        color: #489d48;
+    }
+    .Resultado{
+        background-color: #2f2f2f; 
+        border: .125rem solid #404040; 
+        margin: 1em 0px;
+    }
+    .container{
+        background-color: #171717;
+        display: flex;
+        gap: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    main{
+    margin-left: 225px;
+    }
+    .fim{
+        background-color: #2f2f2f;
+        border: .125rem solid #404040;  
+    }
+    .fim ul li a{
+        list-style: none;
+        text-decoration: none;
+        color: #fafafa;
+    }
+</style>
+
+<body>
+    <div class="container">
+
+  
+    <div class="menu">
+        <header>Índice</header>
+       
+        <ul>
+         <li><a href="index.html">Módulo I - Primeiros Passos com HTML</a></li>
+         <br>
+         <li><a href="#html">O que é HTML?</a></li>
+         <br>
+         <li><a href="#titulo">Title</a></li>
+         <br>
+         <details>
+         <summary>Listas</summary><br>
+         <ol> <!--anotações: linkar as âncoras do índice com os títulos-->
+         <li><a href="#ul"> &lt;ul&gt; Lista Desordenada, representada por bolinha</a></li><br>
+         <li><a href="#ol"> &lt;ol&gt; Listas Ordenadas, representada por números e letras</a></li><br>
+         <li><a href="#nav">&lt;nav&gt; Listas de menu</a></li>
+         </ol>
+         </details>
+         <br>
+         <li><a href="#ancoras">Âncoras</a></li>
+         <br>
+         <details>
+         <summary>Citações, Blockquote e Q</summary><br>
+         <ol>
+         <li><a href="#block">Blockquote, citações longas</a></li><br>
+         <li><a href="#q">Q, citações curtas</a></li><br>
+         <li><a href="#cite">Cite</a></li>
+         </ol>
+         </details>
+         <br>
+         <li><a href="#hr">Tag Hr</a></li>
+         <br>
+         <li><a href="#abbr">Tag ABBR</a></li>
+         <br>
+         <li><a href="#semantica">O que é Semântica?</a></li>
+         <br>
+         <li><a href="#conclusao">Conclusão</a></li>
+         <h4>Veja também:</h4>
+         <li><a href="#">Módulo II - Mídias, Tabelas e Formulários</a></li>
+         <br>
+         <li><a href="#">Módulo III - Aprendendo CSS</a></li>
+
+        </ul>
+    </div>
+  
+    <br>
+    <hr /><br>
+ <main>
+    <section class="content">
+        <h1 style="text-align: center;" id="inicio">Módulo I - Primeiros Passos com HTML</h1>
+        <hr />
+    <h2 id="html">O que é HTML?</h2>
+    <p> 
+        HTML significa <b><i><abbr title="Linguagem de Marcação de Hipertexto">HyperText Markup Language</abbr></i></b>,
+        é a linguagem padrão usada para criar e estruturar páginas na web.<br>
+        Criada por <cite>Tim Berners-Lee</cite>, o HTML permite que você organize e formate o conteúdo de uma página,
+        como textos, imagens, links, e outros elementos.
+    </p>
+    <br>
+
+    <h2 id="titulo">Sobre <abbr title="Elemento HTML Título">Title</abbr></h2>
+    <p> 
+        Os elementos HTML <b>&lt;h1&gt;</b> até <b>&lt;h6&gt;</b> representam seis níveis de título de seção, onde
+        <b>&lt;h1&gt;</b> é o nível de seção mais alto e <b>&lt;h6&gt;</b> é o mais baixo.<br>
+        O seguinte código apresenta todos níveis de Cabeçalho em uso:
+        <pre><code>
+         <p>
+         &lt;h1&gt;Esse é um exemplo de Cabeçalho nível 1&lt;/h1&gt; <br>
+         &lt;h2&gt;Esse é um exemplo de Cabeçalho nível 2&lt;/h2&gt; <br>
+         &lt;h3&gt;Esse é um exemplo de Cabeçalho nível 3&lt;/h3&gt; <br>
+         &lt;h4&gt;Esse é um exemplo de Cabeçalho nível 4&lt;/h4&gt; <br>
+         &lt;h5&gt;Esse é um exemplo de Cabeçalho nível 5&lt;/h5&gt; <br>
+         &lt;h6&gt;Esse é um exemplo de Cabeçalho nível 6&lt;/h6&gt; <br></p>
+        </code></pre>
+        Resultado deste código:
+        <pre><code><blockquote>
+         <h1>Esse é um exemplo de Cabeçalho nível 1</h1>
+         <h2 style="color:#fafafa">Esse é um exemplo de Cabeçalho nível 2</h2>
+         <h3>Esse é um exemplo de Cabeçalho nível 3</h3>
+         <h4 style="color:#fafafa">Esse é um exemplo de Cabeçalho nível 4</h4>
+         <h5>Esse é um exemplo de Cabeçalho nível 5</h5>
+         <h6>Esse é um exemplo de Cabeçalho nível 6</h6>    
+        </blockquote></code></pre>
+    </p>
+    <br>
+
+    <h2 id="listas">Sobre Listas</h2>
+    <h4 id="ul">Listas não ordenadas:</h4>
+    <p> 
+        Para criar uma lista não ordenada em HTML, você pode usar as tags <b>&lt;ul&gt;</b> e
+        <b>&lt;li&gt;</b>.<br>
+        A tag <b>&lt;ul&gt;</b> inicia a lista não ordenada e cada item da lista é definido dentro de uma tag
+        <b>&lt;li&gt;</b>.<br>
+        Podemos adicionar quantos itens quisermos dentro da lista, e eles serão exibidos com marcadores (bolinhas)
+        por padrão.<br>
+        Exemplo de código:
+        <pre><code>
+         &lt;ul&gt;<br>
+         &lt;li&gt;Item 1&lt;/li&gt;<br>
+         &lt;li&gt;Item 2&lt;/li&gt;<br>
+         &lt;li&gt;Item 3&lt;/li&gt;<br>
+         &lt;/ul&gt;
+        </code></pre>
+        Resultado deste código:
+        <div class="Resultado">
+         <blockquote>
+         <ul>
+         <li>Item 1</li>
+         <li>Item 2</li>
+         <li>Item 3</li>
+         </ul>
+         </blockquote>
+        </div>
+    </p>
+    <h4 id="ol">Listas ordenadas:</h4>
+    <p> 
+        Para criar uma lista ordenada em HTML, você pode usar as tags <b>&lt;ol&gt;</b> e
+        <b>&lt;li&gt;</b>.<br>
+        A tag <b>&lt;ol&gt;</b> inicia a lista ordenada e cada item da lista é definido dentro de uma tag
+        <b>&lt;li&gt;</b>.<br>
+        Os itens da lista serão numerados automaticamente pelo navegador.<br>
+        Exemplo de código:
+        <pre><code>
+         &lt;ol&gt;<br>
+         &lt;li&gt;Item 1&lt;/li&gt;<br>
+         &lt;li&gt;Item 2&lt;/li&gt;<br>
+         &lt;li&gt;Item 3&lt;/li&gt;<br>
+         &lt;/ol&gt;
+        </code></pre>
+        Resultado deste código:
+        <div class="Resultado">
+         <blockquote>
+         <ol>
+         <li>Item 1</li>
+         <li>Item 2</li>
+         <li>Item 3</li>
+         </ol>
+         </blockquote>
+        </div>
+        <p>
+         Podemos personalizar o tipo de numeração usando o atributo type na tag <b>&lt;ol&gt;</b>, como <b>type="A"</b>
+         para letras maiúsculas ou </btr> <b>type="a"</b> para letras minúsculas.<br>
+         Exemplo de código:
+        </p>
+        <pre><code>
+         &lt;ol type="A"&gt;<br>
+         &lt;li&gt;Item 1&lt;/li&gt;<br>
+         &lt;li&gt;Item 2&lt;/li&gt;<br>
+         &lt;li&gt;Item 3&lt;/li&gt;<br>
+         &lt;/ol&gt;
+        </code></pre>
+        Resultado deste código:<br>
+        <div class="Resultado">
+         <blockquote>
+         <ol type="A">
+         <li>Item 1</li>
+         <li>Item 2</li>
+         <li>Item 3</li>
+         </ol>
+         </blockquote>
+        </div>
+    </p>
+    <h4 id="nav">Listas de menu:</h4>
+    <p>
+        O Elemento HTML de Navegação <b>&lt;nav&gt;</b> representa uma seção de uma página que aponta para outras páginas 
+        ou para outras áreas da página, ou seja, uma seção com links de navegação.<br>
+        A tag é usada como um contêiner para a lista de itens de navegação.<br>
+        Além da tag navegação <b>&lt;nav&gt;</b>, usaremos a tag de lista <b>&lt;ul&gt;</b> e a tag de âncoras <b>&lt;a&gt;</b><br>
+        Exemplo de código:
+        <pre><code>
+         &lt;nav&gt;<br>
+         &lt;ul&gt;<br>
+         &lt;li&gt;&lt;a href="inicio.html"&gt;Home&lt;/a&gt;&lt;/li&gt; <br>
+         &lt;li&gt;&lt;a href="servicos.html"&gt;Serviços&lt;/a&gt;&lt;/li&gt; <br>
+         &lt;li&gt;&lt;a href="contato.html"&gt;Contato&lt;/a&gt;&lt;/li&gt; <br>
+         &lt;/ul&gt;<br>
+         &lt;/nav&gt;
+        </code></pre>
+        Resultado deste código:
+        <div class="Resultado">
+         <nav>
+         <ul>
+         <li><a href="inicio.html">Home</a></li>
+         <li><a href="servicos.html">Serviços</a></li>
+         <li><a href="contato.html">Contato</a></li>
+         </ul>
+         </nav>
+        </div>
+        <p>
+         Podemos estilizar a barra de menu com Css.<br><br>Para saber mais sobre CSS clique no botão <button>Módulo III - Aprendendo CSS</button>
+        </p>
+    </p>
+    <br>
+
+    <h2 id="ancoras">Sobre Âncoras</h2>
+    <p> 
+        O elemento <b>&lt;a&gt;</b> em HTML (ou elemento âncora), com o atributo href="#" cria-se um hiperligação nas
+        páginas web, arquivos, endereços de emails, ligações na mesma página ou endereços na URL.<br> 
+        O conteúdo dentro de cada <b>&lt;a&gt;</b> precisará indicar o destino do link.<br>
+        Exemplo de código:
+        <pre><code>
+         &lt;h3&gt;Índice&lt;h3&gt;<br>
+         &lt;li&gt;&lt;a href="#nome" title="clique aqui para ir ao destino NOME ESCOLHIDO"&gt;Nome escolhido&lt;/a&gt;&lt;/li&gt;
+        </code></pre>
+        <p>
+         Para âncorar usamos a tag id="".
+        </p>
+        <pre><code>
+         &lt;h2 id="nome"&gt;Nome escolhido&lt;/h2&gt;
+        </code></pre>
+        Resultado deste código:<br>
+        <div class="Resultado">
+         <blockquote>
+         <h3>Índice</h3>
+         <li><a href="#nome" title="clique aqui para ir ao destino NOME ESCOLHIDO" style="color:#fafafa">Nome escolhido</a></li>
+         <hr />
+         <h2 id="nome" style="color:#fafafa">Nome escolhido</h2>
+         <p> 
+             Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+             Distinctio nihil, eius voluptates, harum beatae fuga rerum tenetur quasi amet ratione tempora labore eligendi!<br>
+             Quas nulla, pariatur ab earum alias enim.<br>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+         </p>
+         </blockquote>
+        </div>
+    </p>
+    <br>
+    <h6><a href="#inicio">Voltar</a></h6>
+
+    <h2 id="cite">Citações, Blockquote ou Q</h2>
+    <h4 id="block">Tag Blockquote:</h4>
+    <p> 
+        O elemento <b>&lt;blockquote&gt;</b> é usado para indicar uma citação longa ou um trecho citado de
+        outra fonte.
+        <br>Exemplo de código:
+        <br>
+        <pre><code>
+         &lt;blockquote&gt;Este é um exemplo de citação longa, onde o ( blockquote ) cria um espaço no parágrafo.&lt;/blockquote&gt;
+        </code></pre>   
+        Resultado deste código:
+        <div class="Resultado">
+         <blockquote> 
+         | Este é um exemplo de citação longa, onde o ( blockquote ) cria um espaço no parágrafo.
+         </blockquote>
+        </div>
+    </p>
+    <h4 id="q">Tag Q:</h4>
+    <p>
+        O elemento <b>&lt;q&gt;</b> é utilizado para citações curtas. Diferente do <b>&lt;blockquote&gt;</b>,
+        ele não cria uma nova linha ou parágrafo, mas adiciona aspas ao redor do texto citado.<br>
+        Exemplo de código:
+        <pre><code>
+         &lt;q&gt;Este é um exemplo de citação curta, onde o ( q ) cria aspas para diferenciar.&lt;/q&gt;
+        </code></pre>
+        Resultado deste código:
+        <div class="Resultado">
+         <blockquote>
+         <q>Este é um exemplo de citação curta, onde o ( q ) cria aspas para diferenciar.</q>
+         </blockquote>
+        </div>
+       
+    </p>
+    <h4 id="cite">Tag Cite:</h4>
+    <p>
+        O elemento <b id="cite">&lt;cite&gt;</b> é utilizado para representar um referêcia a um trabalho artistico ou
+        criativo. Isso pode incluir livros, artigos, filmes, músicas, entre outros.<br>
+        O conteúdo dentro da tag <b>&lt;cite&gt;</b> por padrão, é exibido em itálico.<br>
+        Exemplo de código:
+        <pre><code>
+         Este é um exemplo de citação, onde o &lt;cite&gt;( cite ) escreve em itálico para diferenciar.&lt;/cite&gt;
+        </code></pre>
+        Resultado deste código:
+        <div class="Resultado">
+         <blockquote>
+         Este é um exemplo de citação, onde o <cite>( cite ) escreve em itálico para diferenciar.</cite>
+         </blockquote>
+        </div>
+    </p>
+    <br>
+
+    <h2 id="hr">O que é a tag Hr?</h2>
+    <p> 
+        O elemento HTML <b>&lt;hr /&gt;</b> representa uma quebra temática entre elementos de nível de parágrafo,
+        gerando uma linha.<br>
+        Exemplo de código:
+        <pre><code>
+         &lt;p&gt;&lt;b&gt;Este é um exemplo de parágrafo 01&lt;/b&gt;&lt;/p&gt;<br>
+         &lt;hr /&gt;<br>
+         &lt;p&gt;&lt;b&gt;Este é um exemplo de parágrafo 02&lt;/b&gt;&lt;/p&gt; 
+        </code></pre>      
+        Resultado do código:
+        <div class="Resultado">
+         <blockquote>
+         <p><b>Este é um exemplo de parágrafo 01</b></p>
+         <hr>
+         <p><b>Este é um exemplo de parágrafo 02</b></p>
+         </blockquote>
+        </div>
+    </p>
+    <br>
+
+    <h2 id="abbr">O que é a tag ABBR?</h2>
+    <p> 
+        O Elemento HTML &lt;abbr&gt; (ou Elemento de Abreviação HTML) representa uma abreviação e fornece uma descrição.
+        Junto com a tag title, deve conter a descrição completa.<br>
+        Exemplo de código:
+        <pre><code>
+         &lt;p&gt;O Elemento HTML<mark>&lt;abbr title="Elemento de Abreviação HTML"&gt;</mark>abbr<mark>&lt;/abbr&gt;</mark>&lt;/p&gt;
+        </code></pre>              
+        Note que ao passar o mouse em cima da palavra abbr, aparece a frase de descrição.
+        <div class="Resultado">
+         <blockquote>
+         <p>O Elemento HTML<abbr title="Elemento de Abreviação HTML"> abbr</abbr></p>
+         </blockquote>
+        </div>
+    </p>
+    <br>
+
+    <h2 id="semantica"> O que é Semântica?</h2>
+    <p>
+        Durante muitos anos o elemento padrão no HTML era a div, construíamos nosso conteúdo todo baseado nela, e assim
+        nascia a sopa de divs.<br>
+        Mas em 2014 saiu a quinta versão do HTML, e com ela vieram vários mudanças importantes, como performance e
+        acessibilidade.<br>
+        E temos vários elementos para ressignificar as divs:
+        <div class="Resultado">
+         <blockquote>
+         <b>&lt;header&gt;</b> <br>
+         É o cabeçalho da página ou de uma seção da página e normalmente contém logotipos, menus, campos de busca.<br>
+         <br>
+         <b>&lt;section&gt;</b> <br>
+         Representa uma seção genérica de conteúdo quando não houver um elemento mais específico para isso.<br>
+         <br>
+         <b>&lt;article&gt;</b><br>
+         Representa um conteúdo independente e de maior relevância dentro de uma página, como um post de blog, uma notícia 
+         em uma barra lateral ou um bloco de comentários. Um article pode conter outros elementos, como header, cabeçalhos, 
+         parágrafos e imagens.<br>
+         <br>
+         <b>&lt;aside&gt;</b><br>
+         É uma seção que engloba conteúdos relacionados ao conteúdo principal, como artigos relacionados,
+         biografia do autor e publicidade.<br>
+         Normalmente são representadas como barras laterais.<br>
+         <br>
+         <b>&lt;footer&gt;</b><br>
+         Esse elemento representa o rodapé do conteúdo ou de parte dele, pois ele é aceito dentro de vários elementos,
+         como article e section e até do body.<br>
+         Exemplos de conteúdo de um &lt;footer&gt; são informações de autor e links relacionados.<br>
+         <br>
+         <b>&lt;h1&gt;</b> - <b>&lt;h6&gt;</b><br>
+         Eles não foram criados na versão 5 do HTML e nem são específicos para semântica, mas servem para esse propósito.
+         </blockquote>
+        </div>
+    </p>
+    <br>
+
+    <h2 id="conclusao">Conclusão:</h2>
+    <p> 
+        Aqui finalizo o aprendizado em HTML puro.<br>Foram abordados várias tags que aprendi no curso, como
+        &lt;small&gt;,
+        &lt;mark&gt;, &lt;strong&gt; e na busca por conhecimentos, aprendi mencionar um código sem executá-lo, usando
+        <b>(& l t ;) representando ( < ) e ( & g t ; ) representado ( > )</b>
+    </p>
+    <br>
+    <h6><a href="#inicio">Voltar</a></h6>
+    <hr />
+</section>
+    <section class="fim">
+        <br>
+        <blockquote><h4>Veja também:</h4>
+        <ul>
+        <li><a href="#">Módulo II - Mídias, Tabelas e Formulários</a></li>
+        <br>
+        <li><a href="#">Módulo III - Aprendendo CSS</a></li>
+        </ul>
+        <br>
+    
+    </section>
+    <hr />
+    <footer style="text-align: center;"><small>
+           <b> Estrutura html criada por <a href="https://github.com/soucinthia" target="_blank">
+            Sou Cinthia</a> 2024</b>          
+    </small></footer>
+</div>
+</main>
+</body>
+
+</html>
